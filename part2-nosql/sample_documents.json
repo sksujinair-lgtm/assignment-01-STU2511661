@@ -1,1 +1,62 @@
-{}
+[
+  {
+    "product_id": "E1001",
+    "name": "Samsung Smart TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 55000,
+    "specifications": {
+      "screen_size": "55 inches",
+      "resolution": "4K UHD",
+      "voltage": "220V",
+      "warranty": "2 years"
+    },
+    "features": ["Smart TV", "WiFi Enabled", "HDR"],
+    "stock": 25,
+    "ratings": {
+      "average": 4.5,
+      "reviews_count": 120
+    }
+  },
+
+  {
+    "product_id": "C2001",
+    "name": "Men's Casual Shirt",
+    "category": "Clothing",
+    "brand": "Levis",
+    "price": 1999,
+    "sizes_available": ["S", "M", "L", "XL"],
+    "material": "Cotton",
+    "color": "Blue",
+    "care_instructions": {
+      "wash": "Machine wash",
+      "dry": "Do not tumble dry"
+    },
+    "stock": 50,
+    "ratings": {
+      "average": 4.2,
+      "reviews_count": 75
+    }
+  },
+
+  {
+    "product_id": "G3001",
+    "name": "Organic Milk",
+    "category": "Groceries",
+    "brand": "Amul",
+    "price": 60,
+    "quantity": "1 litre",
+    "expiry_date": "2026-04-01",
+    "nutritional_info": {
+      "calories": "150 kcal",
+      "protein": "8g",
+      "fat": "8g"
+    },
+    "storage_instructions": "Keep refrigerated",
+    "stock": 100,
+    "ratings": {
+      "average": 4.7,
+      "reviews_count": 200
+    }
+  }
+]

@@ -38,3 +38,19 @@ will also be lost.
 
 Columns involved:
 order_id, customer_id, product_id
+
+
+
+## Normalization Justification
+
+The argument that keeping all data in a single table is simpler may seem valid initially, but in practice it leads to significant data management issues. The given dataset clearly demonstrates problems such as redundancy, inconsistency, and data loss risks.
+
+For example, customer details like customer_name and customer_email are repeated across multiple rows for every order they place. If a customer such as CUST1001 appears in multiple orders and their email needs to be updated, the update must be made in all rows. Missing even one row leads to inconsistent data, which is a classic update anomaly.
+
+Similarly, product information such as product_name and unit_price is duplicated across multiple rows. If the price of a product changes, it must be updated everywhere. This increases maintenance effort and risk of incorrect reporting.
+
+Another major issue is delete anomaly. If a row corresponding to an order is deleted and that row contains the only record of a customer or product, all associated information is lost. This is undesirable as customer and product data should exist independently of transactions.
+
+Normalization resolves these issues by separating data into logical tables such as Customers, Products, Orders, and Order_Items. This eliminates redundancy, ensures consistency, and allows independent insertion, update, and deletion of data.
+
+Therefore, normalization is not over-engineering but a necessary step for ensuring data integrity, scalability, and maintainability in real-world systems.

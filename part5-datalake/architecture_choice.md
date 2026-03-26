@@ -1,4 +1,4 @@
-##Architecture Recommendation
+## Architecture Recommendation
 
 For a fast-growing food delivery startup handling diverse data types such as GPS logs, customer reviews, transactions, and menu images, a Data Lakehouse architecture is the most suitable choice.
 
